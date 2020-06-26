@@ -1,6 +1,12 @@
 ---
 title: Home
 date: 2020-06-15T19:28:31.000-04:00
+menu:
+  main:
+    identifier: Home
+    name: Hom
+    pre: "<i class='fa fa-heart'></i>"
+    weight: 1
 
 ---
 # Welcome to JoymonOnline.in

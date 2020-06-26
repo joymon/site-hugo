@@ -2,9 +2,3 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 theme = "ananke"
 title = "JoymonOnline"
-[[menu.main]]
-identifier = "Home"
-name = "Hom"
-pre = "<i class='fa fa-heart'></i>"
-url = "/"
-weight = 1
