@@ -1,9 +1,9 @@
 ---
-title: "Home"
-date: 2020-06-15T19:28:31-04:00
-draft: false
----
+title: Home
+date: 2020-06-15T19:28:31.000-04:00
+draft: true
 
+---
 # Welcome to JoymonOnline.in
 
 Hi I am Joy. Here you can find details to know me more. It includes my personal details, education details and professional details.
