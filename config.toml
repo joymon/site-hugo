@@ -4,7 +4,7 @@ theme = "ananke"
 title = "JoymonOnline"
 [[menu.main]]
 identifier = "Home"
-name = "Home"
+name = "Hom"
 pre = "<i class='fa fa-heart'></i>"
 url = "/"
 weight = 1
