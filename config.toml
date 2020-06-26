@@ -3,12 +3,6 @@ languageCode = "en-us"
 theme = "ananke"
 title = "JoymonOnline"
 [[menu.main]]
-identifier = "Resume"
-name = "Resume"
-pre = "<i class='fa fa-heart'></i>"
-url = "/resume"
-weight = 2
-[[menu.main]]
 identifier = "Home"
 name = "Home"
 pre = "<i class='fa fa-heart'></i>"
