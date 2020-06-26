@@ -6,3 +6,4 @@ menu:
     weight: 2
 
 ---
+Blogs
