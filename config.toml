@@ -2,7 +2,3 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 theme = "ananke"
 title = "JoymonOnline"
-[[menu.main]]
-name = "Links"
-url = "/links"
-weight = 2
