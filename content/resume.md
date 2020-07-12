@@ -1,10 +1,15 @@
 ---
 title: "Resume"
-date: 2020-06-15T19:28:31-04:00
-draft: false
-type : 'page'
+date: 2020-07-11T22:08:50-04:00
+draft: true
+menu:
+  main:
+    identifier: Resume
+    name: Resume
+    pre: "<i class='fa fa-heart'></i>"
+    weight: 2
 ---
 
-# Resume
+# Resume page
 
-Resume updated 5Dec 2015
+This is my resume page
