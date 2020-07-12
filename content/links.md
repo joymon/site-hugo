@@ -1,7 +1,7 @@
 ---
 title: "Links"
 date: 2020-07-11T21:55:32-04:00
-draft: true
+draft: false
 description: Metallica is an American heavy metal band formed in 1981.
 menu:
   main:
