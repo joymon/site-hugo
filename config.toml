@@ -2,10 +2,4 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "JoymonOnline"
 theme ="ananke"
-[menu]
-    [[menu.main]]
-     identifier="vlogs"
-     name="vLogs"
-     pre="<i class='fa fa-heart'></i>"
-     url="/vlogs"
-     weight=4
+show_reading_time = true

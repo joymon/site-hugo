@@ -4,8 +4,8 @@ date: 2020-07-12T08:57:02-04:00
 draft: true
 menu:
   main:
-    identifier: Links
-    name: Links
+    identifier: vlog
+    name: Vlog
     pre: "<i class='fa fa-heart'></i>"
     weight: 4
 ---

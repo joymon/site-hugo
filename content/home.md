@@ -2,6 +2,7 @@
 title: "Home"
 date: 2020-07-11T22:05:12-04:00
 draft: false
+
 menu:
   main:
     identifier: Home

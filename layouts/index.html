@@ -1,0 +1,33 @@
+{{ define "main" }}
+    <main aria-role="main">
+        <aside>
+            Contact Me
+            joymon@gmail.com
+            Mob: +1 NO1-NOJOY-16
+        </aside>
+      <header class="homepage-header">
+        <h1>{{.Title}}</h1>
+        {{ with .Params.subtitle }}
+        <span class="subtitle">{{.}}</span>
+        {{ end }}
+        
+      </header>
+      <div>
+          <h2>What's new</h2>
+          <ul>
+          {{ range first 3 $.Site.Data.whatsnew}}
+          <li>{{ . }}</li>
+          {{ end }}
+        </ul>
+    </div>
+      <div class="homepage-content">
+        <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
+        {{.Content}}
+      </div>
+      <div>
+        {{ range first 10 .Site.RegularPages }}
+            {{ .Render "summary"}}
+        {{ end }}
+      </div>
+    </main>
+{{ end }}
