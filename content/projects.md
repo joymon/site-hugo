@@ -7,7 +7,7 @@ menu:
     identifier: Projects
     name: Projects
     pre: "<i class='fa fa-heart'></i>"
-    weight: 5
+    weight: 6
 ---
 
 # Projects

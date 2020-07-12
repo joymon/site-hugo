@@ -7,7 +7,7 @@ menu:
     identifier: Changelog
     name: Changelog
     pre: "<i class='fa fa-heart'></i>"
-    weight: 6
+    weight: 7
 ---
 
 # Changelog

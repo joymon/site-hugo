@@ -8,7 +8,7 @@ menu:
     identifier: Links
     name: Links
     pre: "<i class='fa fa-heart'></i>"
-    weight: 4
+    weight: 5
 ---
 
 **Metallica** is an American heavy metal band. The band was formed in *1981* in Los Angeles, California by drummer Lars Ulrich and vocalist/guitarist [James Hetfield](https://en.wikipedia.org/wiki/James_Hetfield), and has been based in San Francisco, California for most of its career.
