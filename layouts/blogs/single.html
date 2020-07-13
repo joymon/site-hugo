@@ -8,20 +8,24 @@
         {{ end }}
       </header>
       {{ $dataJ := getJSON "https://joyfulwpf.blogspot.com/feeds/posts/default?orderby=published&max-results=3&alt=json" }}
-
-      <h2>{{ $dataJ.feed.title }}</h2>
       
       <!-- When using the $t which is the JSON key name hugo says bad character U+0024 '$' -->
-      <!--<h2>{{ $dataJ.feed.title.$t }}</h2>-->
+      <h2>{{ index $dataJ.feed.title "$t" }}</h2>-->
 
       <div class="homepage-content">
         
         {{.Content}}
       </div>
       <div>
-        {{ range first 10 .Site.RegularPages }}
-            {{ .Render "summary"}}
+        {{ range first 3 $dataJ.feed.entry }}
+            {{index .title "$t" }}
+            <br/>
+            {{index .updated "$t" }}
+            <br/>
+            {{index .content "$t" | safeHTML }}
+            <br/>
         {{ end }}
+        
       </div>
     </main>
 {{ end }}
