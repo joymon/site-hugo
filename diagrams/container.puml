@@ -1,0 +1,46 @@
+@startuml
+!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/release/1-0/C4_Container.puml
+!includeurl https://raw.githubusercontent.com/joymon/JoymonOnline.In/master/diagrams/vars.puml
+
+Person(personAlias, "Internet User", USER_DESC)
+Person(developer,"Developer","Developer")
+System_Ext(blogger,"Blogger",BLOGGER_SYS_DESC)
+System_Ext(stackOverflow,"StackOverflow",SO_SYS_DESC)
+System_Ext(github,"GitHub",GH_SYS_DESC)
+System_Ext(linkedIn,"Linked In",LI_SYS_DESC)
+System_Ext(twitter,"Twitter",TWITTER_SYS_DESC)
+System_Ext(facebook,"Facebook",FB_SYS_DESC)
+System_Ext(youtube,"YouTube",YT_SYS_DESC)
+System_Ext(googleDocs,"Google Docs",GD_SYS_DESC)
+System_Ext(Zapier,"Zapier","A no-code automation platform")
+
+System_Boundary(joymononline, "JoymonOnline"){
+    Container(browser,"WebBrowser","HTML, JavaScript, CSS, AngularJS","Any web browser supporting AngularJS")
+    Container(joymonOnlineWebSite, "JoymonOnlineWebSite", "HTML, CSS, JavaScript, GitHub Pages", "Serves web site. Static files")
+    Rel(browser,joymonOnlineWebSite,"Access the website","TCP 443,http(s), Anonymous")
+    Container(ghActions,"GitHubActions","CI/CD Service")
+    Container(source,"Source code","Hugo","Hugo based source")
+    Rel(ghActions,source,"Clone")
+    Rel(ghActions,joymonOnlineWebSite,"Push")
+    Rel(developer,ghActions,"Commit which trigger webhook")
+    Rel(developer,source,"Commit")
+    Rel(ghActions,blogger,"Access recent posts using API")
+    Rel(ghActions,github,"Access project details using API")
+
+    Container(youtubeProxy,"Youtube Proxy API","Firebase, NodeJS","API which talks to YouTube")
+    Rel(youtubeProxy,youtube,"Make API calls","http(s),Key based auth")
+
+    Rel(ghActions,youtubeProxy,"Get Recent Videos")
+    Rel(Zapier,youtube,"Monitor")
+    Rel(Zapier,blogger,"Monitor")
+    Rel(Zapier,source,"Create issue")
+}
+Rel(browser,stackOverflow,"Access profile data to show badge","TCP 443,http(s)")
+Rel(personAlias, browser, "Access site", "Opens browser and navigate")
+Rel(browser,linkedIn,"Access profile to show profile image","TCP 443,http(s)")
+Rel(browser,twitter,"Navigtes","HTML Link")
+Rel(browser,facebook,"Navigtes","HTML Link")
+Rel(browser,youtube,"Navigtes","HTML Link")
+Rel(browser,googleDocs,"Preview of resume","TCP 443,http(s)")
+
+@enduml
