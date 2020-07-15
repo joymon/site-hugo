@@ -13,3 +13,6 @@ menu:
 # Resume page
 
 This is my resume page
+
+        
+{{< gdocs src="https://docs.google.com/gview?url=https://joymononline.in/uploads/joy_resume.pdf&embedded=true" >}}
