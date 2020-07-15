@@ -1,0 +1,21 @@
+{{ define "main" }}
+<main aria-role="main">
+
+  <header class="homepage-header">
+    <h1>{{.Title}}</h1>
+    {{ with .Params.subtitle }}
+    <span class="subtitle">{{.}}</span>
+    {{ end }}
+  </header>
+  {{ range $.Site.Data.projects }}
+  {{ $apiUrl := (print "https://api.github.com/repos/joymon/"  .)}}
+  {{ $response := getJSON $apiUrl}}
+  {{.}}<br />
+  {{ $response.description}}<br />
+  Application URL: {{$response.homepage}}<br />
+  Source code:{{$response.url}}
+  <hr />
+  {{ end }}
+  </div>
+</main>
+{{ end }}
