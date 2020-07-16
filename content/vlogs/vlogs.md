@@ -11,5 +11,3 @@ menu:
 ---
 
 # Vlogs
-
-{{< youtube id="2yt7PpUdUy0" autoplay="true" >}}

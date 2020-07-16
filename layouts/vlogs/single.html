@@ -1,0 +1,21 @@
+{{ define "main" }}
+<main aria-role="main">
+    {{ range $.Site.Data.vlogs.channels}}
+    {{ $url := (print "https://youtube-proxy-api.herokuapp.com/api/channels/"  . "/videos") }}
+    {{ $videos := getJSON $url }}
+
+    {{ range $videos }}
+
+    <iframe src="https://www.youtube.com/embed/{{.id}}?autoplay=0" style=" width: 50%; height: 50%; border:0;"
+        allowfullscreen="" title="YouTube Video">
+    </iframe>
+    <br />
+    {{.id}}
+    <br />
+    {{.title}}
+    <hr />
+    {{ end }}
+    {{end}}
+    </div>
+</main>
+{{ end }}
