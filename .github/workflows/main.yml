@@ -6,7 +6,7 @@ name: Publish Dev Site
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
+    branches: [master]
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -22,3 +22,5 @@ jobs:
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           args: --cleanDestinationDir
+      - name: Build and deploy
+        uses: victoriadrake/hugo-latest-cd@master
