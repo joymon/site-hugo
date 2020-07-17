@@ -22,5 +22,3 @@ jobs:
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           args: --cleanDestinationDir
-      - name: Build and deploy
-        uses: victoriadrake/hugo-latest-cd@master
