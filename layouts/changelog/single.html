@@ -1,0 +1,26 @@
+{{ define "main" }}
+<main aria-role="main">
+
+  <header class="homepage-header">
+    <h3>Version x.x.x.x</h3>
+    <h3>{{.Title}}</h3>
+    {{ with .Params.subtitle }}
+    <span class="subtitle">{{.}}</span>
+    {{ end }}
+  </header>
+  {{ range $.Site.Data.changelog }}
+  <h4>{{.version}}</h4>
+  {{range .changes}}
+  <dl>
+    <dt>
+      {{.date}}
+    </dt>
+    <dd>
+      {{.description}}
+    </dd>
+  </dl>
+  {{end}}
+  {{ end }}
+  </div>
+</main>
+{{ end }}

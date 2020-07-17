@@ -5,7 +5,7 @@ draft: false
 menu:
   main:
     identifier: vlog
-    name: Vlog
+    name: vLog
     pre: "<i class='fa fa-heart'></i>"
     weight: 4
 ---
