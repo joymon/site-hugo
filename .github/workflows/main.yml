@@ -22,4 +22,3 @@ jobs:
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           args: --cleanDestinationDir
-          siteDir: /site-hugo
