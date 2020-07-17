@@ -1,7 +1,7 @@
 ---
 title: "Resume"
 date: 2020-07-11T22:08:50-04:00
-draft: true
+draft: false
 menu:
   main:
     identifier: Resume

@@ -1,7 +1,7 @@
 ---
 title: "Changelog"
 date: 2020-07-11T22:20:46-04:00
-draft: true
+draft: false
 menu:
   main:
     identifier: Changelog

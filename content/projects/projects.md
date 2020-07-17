@@ -1,7 +1,7 @@
 ---
 title: "Projects"
 date: 2020-07-11T22:20:40-04:00
-draft: true
+draft: false
 menu:
   main:
     identifier: Projects
