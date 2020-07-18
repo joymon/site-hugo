@@ -2,7 +2,7 @@
 <main aria-role="main">
 
   <header class="homepage-header">
-    <h3>Version {{$.Site.Data.baseversion.version}}{{getenv "GITHUB_RUN_ID"}}</h3>
+    <h3>Version {{$.Site.Data.baseversion.version}}{{getenv "GITHUB_RUN_NUMBER"}}</h3>
     <h3>{{.Title}}</h3>
     {{ with .Params.subtitle }}
     <span class="subtitle">{{.}}</span>
