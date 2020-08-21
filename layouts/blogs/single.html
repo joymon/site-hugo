@@ -21,16 +21,13 @@
             {{index .title "$t" }}
             <br/>
             {{ $updated := index .updated "$t"}}
-            {{ $updated}}<br/>
-            {{ $updated := ((time $updated).Add (50 | duration "hour" ))}}
-            {{ $updated}}<br/>
+            {{ $updated := ((time $updated).Add (1 | duration "hour" ))}}
             {{ $updated.Format "02 Jan 2006"  }}
             <br/>
             {{ slicestr (index .content "$t") 0 200 | safeHTML }}...
             <!--{{ truncate 200 (index .content "$t") }}-->
             <br/>
         {{ end }}
-        
       </div>
     </main>
 {{ end }}
