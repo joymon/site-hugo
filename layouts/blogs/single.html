@@ -14,15 +14,20 @@
 
       <div class="homepage-content">
         
-        {{.Content}}
+        {{.Content | safeHTML}}
       </div>
       <div>
         {{ range first 3 $dataJ.feed.entry }}
             {{index .title "$t" }}
             <br/>
-            {{index .updated "$t" }}
+            {{ $updated := index .updated "$t"}}
+            {{ $updated}}<br/>
+            {{ $updated := ((time $updated).Add (50 | duration "hour" ))}}
+            {{ $updated}}<br/>
+            {{ $updated.Format "02 Jan 2006"  }}
             <br/>
-            {{index .content "$t" | safeHTML }}
+            {{ slicestr (index .content "$t") 0 200 | safeHTML }}...
+            <!--{{ truncate 200 (index .content "$t") }}-->
             <br/>
         {{ end }}
         
