@@ -3,3 +3,7 @@
 # https://JoymonOnline.in (Hugo)
 Source of Hugo based JoymonOnline.in
 
+# Architecture
+
+- [Container diagram](http://www.plantuml.com/plantuml/proxy?fmt=svg&cache=no&src=https://raw.githubusercontent.com/joymon/site-hugo/master/diagrams/container.puml)
+- [CI/CD](http://www.plantuml.com/plantuml/proxy?fmt=svg&cache=no&src=https://raw.githubusercontent.com/joymon/site-hugo/master/diagrams/ci-cd.puml)
