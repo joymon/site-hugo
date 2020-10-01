@@ -27,7 +27,7 @@ System_Boundary(joymononline, "JoymonOnline"){
     Rel(ghActions,blogger,"Access recent posts using API")
     Rel(ghActions,github,"Access project details using API")
 
-    Container(youtubeProxy,"Youtube Proxy API","Firebase, NodeJS","API which talks to YouTube")
+    Container(youtubeProxy,"Youtube Proxy API","Heroku, NodeJS","API which talks to YouTube")
     Rel(youtubeProxy,youtube,"Make API calls","http(s),Key based auth")
 
     Rel(ghActions,youtubeProxy,"Get Recent Videos")
