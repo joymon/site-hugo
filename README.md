@@ -7,3 +7,6 @@ Source of Hugo based(in-progress) JoymonOnline.in
 
 - [Container diagram](http://www.plantuml.com/plantuml/proxy?fmt=svg&cache=no&src=https://raw.githubusercontent.com/joymon/site-hugo/master/diagrams/container.puml)
 - [CI/CD](http://www.plantuml.com/plantuml/proxy?fmt=svg&cache=no&src=https://raw.githubusercontent.com/joymon/site-hugo/master/diagrams/ci-cd.puml)
+
+# Theme
+- Current theme provided by [https://github.com/budparr/gohugo-theme-ananke](https://github.com/budparr/gohugo-theme-ananke)
