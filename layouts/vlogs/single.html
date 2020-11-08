@@ -1,21 +1,41 @@
 {{ define "main" }}
-<main aria-role="main">
-    {{ range $.Site.Data.vlogs.channels}}
-    {{ $url := (print "https://youtube-proxy-api.herokuapp.com/api/channels/"  . "/videos") }}
-    {{ $videos := getJSON $url }}
+<div class="page">
+    <div id="content">
 
-    {{ range $videos }}
+        {{ partial "page-header.html" . }}
+        {{ range $.Site.Data.vlogs.channels}}
+        <div class="blogItems">
+            {{ $url := (print "https://youtube-proxy-api.herokuapp.com/api/channels/"  . "/videos") }}
+            {{ $videos := getJSON $url }}
 
-    <iframe src="https://www.youtube.com/embed/{{.id}}?autoplay=0" style=" width: 50%; height: 50%; border:0;"
-        allowfullscreen="" title="YouTube Video">
-    </iframe>
-    <br />
-    {{.id}}
-    <br />
-    {{.title}}
-    <hr />
-    {{ end }}
-    {{end}}
+            <h4>{{.}}</h4>
+            {{ range $videos }}
+            <div class="blogItem">
+                <table>
+                    <tr>
+                        <td>
+                            <a href="https://www.youtube.com/watch?v={{.id}}">{{.title}}</a>
+                        </td>
+
+                        <!-- {{.id}} -->
+
+                        <td class="postedDate">{{ dateFormat "02 Jan 2006" .publishedAt}}</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <iframe src="https://www.youtube.com/embed/{{.id}}?autoplay=0"
+                                style=" width: 100%; height: 100%; border:0;" allowfullscreen="" title="YouTube Video">
+                            </iframe>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">{{.description}}</td>
+                    </tr>
+                </table>
+            </div>
+            {{ end }}
+        </div>
+        {{end}}
     </div>
-</main>
+</div>
 {{ end }}
