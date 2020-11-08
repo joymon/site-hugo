@@ -1,22 +1,24 @@
 {{ define "main" }}
-<main aria-role="main">
+<div class="page">
+  <div id="content">
+    {{ partial "page-header.html" . }}
 
-  <header class="homepage-header">
-    <h1>{{.Title}}</h1>
-    {{ with .Params.subtitle }}
-    <span class="subtitle">{{.}}</span>
+    {{ range $.Site.Data.projects }}
+    <div>
+      {{ $apiUrl := (print "https://api.github.com/repos/joymon/"  .)}}
+      {{ $response := getJSON $apiUrl}}
+      <h4>
+        {{.}}</h4>
+      <p class="first">
+        {{ $response.description}}<br />
+        <br />
+        Application URL: <a href="{{$response.homepage}}">
+          {{$response.homepage}}</a>
+        <br />
+        Source code:<a href="{{$response.url}}">{{$response.url}}</a>
+      </p>
+    </div>
     {{ end }}
-    <hr />
-  </header>
-  {{ range $.Site.Data.projects }}
-  {{ $apiUrl := (print "https://api.github.com/repos/joymon/"  .)}}
-  {{ $response := getJSON $apiUrl}}
-  {{.}}<br />
-  {{ $response.description}}<br />
-  Application URL: {{$response.homepage}}<br />
-  Source code:{{$response.url}}
-  <hr />
-  {{ end }}
   </div>
-</main>
+</div>
 {{ end }}
