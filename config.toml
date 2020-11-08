@@ -1,9 +1,10 @@
 baseURL = "https://joymon.github.io/site-hugo"
 languageCode = "en-us"
 title = "JoymonOnline"
-description = "Know me more..."
 theme ="jo-black"
 show_reading_time = true
+[params]
+ description = "Know me more..."
 [menu]
  [[menu.main]]
   identifier ="Home"
