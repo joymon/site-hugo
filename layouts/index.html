@@ -1,33 +1,44 @@
 {{ define "main" }}
-    <main aria-role="main">
-        <aside>
-            Contact Me
-            joymon@gmail.com
-            Mob: +1 NO1-NOJOY-16
-        </aside>
-      <header class="homepage-header">
-        <h1>{{.Title}}</h1>
+<div class="page" id="home">
+  <div class="shim column"></div>
+  <div id="sidebar">
+    <h4>
+      Contact Me</h4>
+    joymon@gmail.com
+    Mob: +1 NO1-NOJOY-16
+    <div id="coollinks">
+      <h4>Cool Links</h4>
+      <ul class="link">
+          <li><a href="http://www.joyfulwpf.blogspot.com" target="_blank">My WPF blog</a></li>
+          <li><a href="http://www.joymonscode.blogspot.com" target="_blank">Joymon v/s Code</a></li>
+      </ul>
+  </div>
+  </div>
+  <div id="content">
+        <h3>{{.Title}}</h3>
         {{ with .Params.subtitle }}
-        <span class="subtitle">{{.}}</span>
+        <p >{{.}}</p>
         {{ end }}
-        
-      </header>
-      <div>
-          <h2>What's new</h2>
-          <ul>
+        <hr/>
+      <div id="whatsnew">
+        <h4>What's new</h4>
+        <ul>
           {{ range first 3 $.Site.Data.whatsnew}}
           <li>{{ . }}</li>
           {{ end }}
         </ul>
-    </div>
+        <hr/>
+      </div>
       <div class="homepage-content">
         <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
         {{.Content}}
       </div>
       <div>
         {{ range first 10 .Site.RegularPages }}
-            {{ .Render "summary"}}
+        {{ .Render "summary"}}
         {{ end }}
       </div>
-    </main>
+    
+  </div>
+</div>
 {{ end }}
