@@ -2,6 +2,7 @@
 title: "Vlogs"
 date: 2020-07-12T08:57:02-04:00
 draft: false
+type: vlogs
 menu:
   main:
     identifier: vlog
