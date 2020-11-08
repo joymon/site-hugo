@@ -1,33 +1,39 @@
 {{ define "main" }}
-    <main aria-role="main">
-        
-      <header class="homepage-header">
-        <h1>{{.Title}}</h1>
-        {{ with .Params.subtitle }}
-        <span class="subtitle">{{.}}</span>
-        {{ end }}
-      </header>
-      {{ $dataJ := getJSON "https://joyfulwpf.blogspot.com/feeds/posts/default?orderby=published&max-results=3&alt=json" }}
-      
-      <!-- When using the $t which is the JSON key name hugo says bad character U+0024 '$' -->
-      <h2>{{ index $dataJ.feed.title "$t" }}</h2>-->
 
-      <div class="homepage-content">
-<!--         {{.Content | safeHTML}} -->
-      </div>
-      <div>
+<div class="page">
+  <div id="content">
+    {{ partial "page-header.html" . }}
+    {{ $dataJ := getJSON "https://joyfulwpf.blogspot.com/feeds/posts/default?orderby=published&max-results=3&alt=json" }}
+
+    <div>
+      <!-- When using the $t which is the JSON key name hugo says bad character U+0024 '$' -->
+      <h4>
+        <a href="{{(index $dataJ.feed.link 2).href}}"> {{ index $dataJ.feed.title "$t" }}</a></h4>
+      <div class="blogItems">
         {{ range first 3 $dataJ.feed.entry }}
-            {{index .title "$t" }}
-            <br/>
-            {{ $updated := index .updated "$t"}}
-            {{ $updated := ((time $updated).Add (1 | duration "hour" ))}}
-            {{ $updated.Format "02 Jan 2006"  }}
-            <br/>
-            {{ slicestr (index .content "$t") 0 200 | safeHTML }}...
-            <!--{{ truncate 200 (index .content "$t") }}-->
-            
+        <div class="blogItem">
+          <table>
+            <tr>
+              <td><a href="{{(index .link 4).href}}"> {{index .title "$t" }}</a>
+              </td>
+              {{ $updated := index .updated "$t"}}
+              {{ $updated := ((time $updated).Add (1 | duration "hour" ))}}
+              <td class="postedDate">
+                {{ $updated.Format "02 Jan 2006"  }}
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                {{ slicestr (index .content "$t") 0 200 | safeHTML }}...
+                <!--{{ truncate 200 (index .content "$t") }}-->
+              </td>
+            </tr>
+          </table>
+        </div>
         {{ end }}
-        <hr/>
+        <hr />
       </div>
-    </main>
+    </div>
+  </div>
+</div>
 {{ end }}
