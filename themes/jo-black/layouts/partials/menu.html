@@ -1,0 +1,7 @@
+{{ if .Site.Menus.main }}
+  {{ range .Site.Menus.main }}
+    <a class="menuItem" href="{{ .URL }}" title="{{ .Name }} page">
+      {{ .Name }}
+    </a>
+  {{ end }}
+{{ end }}
