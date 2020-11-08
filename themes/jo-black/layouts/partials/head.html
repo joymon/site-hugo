@@ -1,9 +1,11 @@
+<title>{{.Site.Title}}</title>
 <meta name="viewport" content="width=device-width,minimum-scale=1">
-    
-<link rel="stylesheet" href="/site-hugo/css/default.css"/> 
+<meta name="description"
+    content="{{ if .Params.summary }}{{ .Params.summary }}{{ else if .Site.Params.Description }}{{ .Site.Params.Description }}{{ else }}Something hardcoded{{ end }}" />
+<meta name="KEYWORDS" content="{{ .Site.Params.Keywords }}">
+<meta property="author" content="{{if .Params.author}}{{.Params.author}}{{else}}{{ .Site.Params.author }}{{end}}" />
+<meta property="contact" content="{{if .Params.contact}}{{.Params.contact}}{{else}}{{ .Site.Params.contact }}{{end}}" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-<link rel="stylesheet" href="/site-hugo/css/font-awesome.min.css"/> 
-<meta
-     name="description"
-     content="{{ if .Params.summary }}{{ .Params.summary }}{{ else if .Site.Params.Description }}{{ .Site.Params.Description }}{{ else }}Something hardcoded{{ end }}"
-   />
+<link rel="stylesheet" href="/site-hugo/css/default.css" />
+<link rel="stylesheet" href="/site-hugo/css/font-awesome.min.css" />

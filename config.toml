@@ -3,9 +3,13 @@ languageCode = "en-us"
 title = "JoymonOnline"
 theme ="jo-black"
 show_reading_time = true
+
 [params]
  description = "Personal information site of Joy George K nicknamed Joymon.This contains my personal ,educational and professionsl details"
  subtitle = "Know me more..."
+ author ="Joy George K"
+ contact = "joymon@gmail.com"
+ keywords = "Joymon, Joymon Online, Joy George K, Kunjikkuru House"
 [menu]
  [[menu.main]]
   identifier ="Home"
