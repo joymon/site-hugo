@@ -6,6 +6,7 @@
     {{ with .Params.subtitle }}
     <span class="subtitle">{{.}}</span>
     {{ end }}
+    <hr />
   </header>
   {{ range $.Site.Data.projects }}
   {{ $apiUrl := (print "https://api.github.com/repos/joymon/"  .)}}

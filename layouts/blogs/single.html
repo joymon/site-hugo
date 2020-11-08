@@ -13,8 +13,7 @@
       <h2>{{ index $dataJ.feed.title "$t" }}</h2>-->
 
       <div class="homepage-content">
-        
-        {{.Content | safeHTML}}
+<!--         {{.Content | safeHTML}} -->
       </div>
       <div>
         {{ range first 3 $dataJ.feed.entry }}
@@ -26,8 +25,9 @@
             <br/>
             {{ slicestr (index .content "$t") 0 200 | safeHTML }}...
             <!--{{ truncate 200 (index .content "$t") }}-->
-            <br/>
+            
         {{ end }}
+        <hr/>
       </div>
     </main>
 {{ end }}
