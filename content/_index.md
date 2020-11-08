@@ -6,7 +6,7 @@ subtitle: Hi I am Joy. Here you can find details to know me more. It includes my
 show_reading_time: true
 ---
 
-#### Who Am I ??
+### Who Am I ??
 
 I am a software engineer willing to solve problems regardless of tools and technologies. My experience mainly include Microsoft tech stack as well as open web technologies. Main tech playgrounds are Software Architecture, Distributed systems, Microservices, Cloud computing, Azure, JavaScript, Angular, TypeScript, HTML5, NodeJS, C#, .Net, ASP.Net, WPF, WCF, Linq etc...My earlier technologies were .net windows forms, ASP.Net web forms and Silverlight. Currently working as Solution Architect for a company based in New Jersey, US.
 

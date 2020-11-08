@@ -1,0 +1,28 @@
+[
+    {
+        "category":"My blogs",
+        "items":[
+            {
+                "name":"Joymon's World of WPF",
+                "href":"http://www.joyfulwpf.blogspot.com/",
+                "description":"A blog about the new Microsoft technology WPF."
+            },
+            {
+                "name":"Joymon v/s Code",
+                "href":"http://www.joymonscode.blogspot.com/",
+                "description" : "General progamming blog with code snippets."
+
+            }
+        ]
+    },
+    {
+        "category":"My Profile in Social sites",
+        "items":[
+            {
+                "name":"Facebook",
+                "href":"http://www.new.facebook.com/profile.php?id=832130326",
+                "description": "Facebook"
+            }
+        ]
+    }
+]

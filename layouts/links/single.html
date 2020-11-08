@@ -1,0 +1,22 @@
+{{ define "main" }}
+<div class="page">
+  <div id="content">
+      
+    {{ partial "page-header.html" . }}
+
+    {{ range $.Site.Data.links }}
+    <h4>{{.category}}</h4>
+    {{range .items}}
+    <dl>
+      <dt>
+        <a href="{{.href}}"> {{.name}}</a>
+      </dt>
+      <dd>
+        {{.description}}
+      </dd>
+    </dl>
+    {{end}}
+    {{ end }}
+  </div>
+</div>
+{{ end }}
