@@ -8,7 +8,7 @@ menu:
   main:
     identifier: Changelog
     name: Changelog
-    pre: "<i class='fa fa-heart'></i>"
+    pre: "<i class='fa fa-list-alt'></i>"
     weight: 7
 ---
 

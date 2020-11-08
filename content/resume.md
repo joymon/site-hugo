@@ -8,7 +8,7 @@ menu:
   main:
     identifier: Resume
     name: Resume
-    pre: "<i class='fa fa-heart'></i>"
+    pre: "<i class='fa fa-file-text-o'></i>"
     weight: 2
 ---
 

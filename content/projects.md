@@ -8,7 +8,7 @@ menu:
   main:
     identifier: Projects
     name: Projects
-    pre: "<i class='fa fa-heart'></i>"
+    pre: "<i class='fa fa-windows'></i>"
     weight: 6
 ---
 

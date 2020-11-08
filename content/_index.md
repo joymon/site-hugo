@@ -4,6 +4,7 @@ date: 2020-07-11T21:55:32-04:00
 draft: false
 subtitle: Hi I am Joy. Here you can find details to know me more. It includes my personal details, education details and professional details
 show_reading_time: true
+pre: "<i class='fas fa-home'></i>"
 ---
 
 ### Who Am I ??

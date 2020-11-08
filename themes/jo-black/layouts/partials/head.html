@@ -1,5 +1,5 @@
 <title>{{.Site.Title}}</title>
-<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
 <meta name="description"
     content="{{ if .Params.summary }}{{ .Params.summary }}{{ else if .Site.Params.Description }}{{ .Site.Params.Description }}{{ else }}Something hardcoded{{ end }}" />
 <meta name="KEYWORDS" content="{{ .Site.Params.Keywords }}">
@@ -7,5 +7,8 @@
 <meta property="contact" content="{{if .Params.contact}}{{.Params.contact}}{{else}}{{ .Site.Params.contact }}{{end}}" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-<link rel="stylesheet" href="/site-hugo/css/default.css" />
 <link rel="stylesheet" href="/site-hugo/css/font-awesome.min.css" />
+<link rel="stylesheet" href="/site-hugo/css/default.css" />
+<link rel="stylesheet" href="/site-hugo/css/default-480px.css" />
+<link rel="stylesheet" href="/site-hugo/css/default-700px.css" />
+<link rel="stylesheet" href="/site-hugo/css/default-980px.css" />

@@ -10,7 +10,7 @@ menu:
   main:
     identifier: Links
     name: Links
-    pre: "<i class='fa fa-heart'></i>"
+    pre: "<i class='fa fa-link'></i>"
     weight: 5
 ---
 

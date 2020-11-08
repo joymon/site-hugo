@@ -8,7 +8,7 @@ menu:
   main:
     identifier: vlog
     name: vLog
-    pre: "<i class='fa fa-heart'></i>"
+    pre: "<i class='fa fa-youtube'></i>"
     weight: 4
 ---
 

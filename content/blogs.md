@@ -8,6 +8,6 @@ menu:
   main:
     identifier: Blogs
     name: Blogs
-    pre: "<i class='fa fa-heart'></i>"
+    pre: "<i class='fa fa-rss'></i>"
     weight: 3
 ---

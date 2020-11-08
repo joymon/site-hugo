@@ -14,6 +14,6 @@ show_reading_time = true
  [[menu.main]]
   identifier ="Home"
   name="Home"
-  pre="<i class='fa fa-heart'></i>"
+  pre="<i class='fa fa-home'></i>"
   url="/"
   weight="1"
