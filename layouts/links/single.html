@@ -6,16 +6,18 @@
 
     {{ range $.Site.Data.links }}
     <h4>{{.category}}</h4>
-    {{range .items}}
     <dl>
+    
+    {{range .items}}
       <dt>
         <a href="{{.href}}"> {{.name}}</a>
       </dt>
       <dd>
         {{.description}}
       </dd>
-    </dl>
     {{end}}
+  </dl>
+    
     {{ end }}
   </div>
 </div>

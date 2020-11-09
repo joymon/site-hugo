@@ -22,7 +22,28 @@
                 "name":"Facebook",
                 "href":"http://www.new.facebook.com/profile.php?id=832130326",
                 "description": "Facebook"
+            },
+            {
+                "name":"LinkedIn",
+                "href":"https://www.linkedin.com/in/joymon",
+                "description":"LinkedIn"
+            }
+        ]
+    },
+    {
+        "category":"Technology profiles",
+        "items":[
+            {
+                "name":"Stackoverflow",
+                "href":"http://stackoverflow.com/users/181832/joymon",
+                "description": "Question answer site for developers"
+            },
+            {
+                "name":"Github",
+                "href":"https://github.com/joymon/",
+                "description":"Source code repository for my open source projects."
             }
         ]
     }
+
 ]
