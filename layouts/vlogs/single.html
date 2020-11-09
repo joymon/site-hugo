@@ -5,10 +5,10 @@
         {{ partial "page-header.html" . }}
         {{ range $.Site.Data.vlogs.channels}}
         <div class="blogItems">
-            {{ $url := (print "https://youtube-proxy-api.herokuapp.com/api/channels/"  . "/videos") }}
+            {{ $url := (print "https://youtube-proxy-api.herokuapp.com/api/channels/"  .id "/videos") }}
             {{ $videos := getJSON $url }}
 
-            <h4>{{.}}</h4>
+            <h4><a href="https://www.youtube.com/channel/{{.id}}"> {{.name}}</a></h4>
             {{ range $videos }}
             <div class="blogItem">
                 <table>
