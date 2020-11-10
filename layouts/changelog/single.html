@@ -10,7 +10,7 @@
     {{range .changes}}
     <dl>
       <dt>
-        {{.date}}
+        {{dateFormat "02Jan2006" .date}}
       </dt>
       <dd>
         {{.description}}
