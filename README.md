@@ -10,3 +10,4 @@ Source of Hugo based(in-progress) JoymonOnline.in
 
 # Theme
 - Current theme provided by [https://github.com/budparr/gohugo-theme-ananke](https://github.com/budparr/gohugo-theme-ananke)
+- Creating new theme to reflect the existing style is in-progress  https://github.com/joymon/site-hugo/tree/master/themes/jo-black
