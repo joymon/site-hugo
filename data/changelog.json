@@ -1,14 +1,15 @@
 [
     {
-        "version": "v7",
+        "version": "V7",
         "changes": [
             {
                 "date": "2020-11-08",
-                "description":"Migrated from AngularJS 1.x to JAMstack using Hugo. Staging version ready."
-            }]
+                "description": "Migrated from AngularJS 1.x to JAMstack using Hugo. Used same theme. Staging version ready."
+            }
+        ]
     },
     {
-        "version": "v6",
+        "version": "V6",
         "changes": [
             {
                 "date": "2020-01-26",
@@ -19,34 +20,120 @@
                 "description": "Started using TravisCI to deploy to production environment."
             },
             {
-                "date":"2018-10-17",
-                "description" :"Separated PrayerBook app to its own hosting space and redirected from here."
+                "date": "2018-10-17",
+                "description": "Separated PrayerBook app to its own hosting space and redirected from here."
             },
             {
-                "date":"2017-03-13",
-                "description":"Serves the site from Github Pages keeping only domain with GoDaddy."
+                "date": "2017-03-13",
+                "description": "Serves the site from Github Pages keeping only domain with GoDaddy."
             },
             {
-                "date":"2017-02-08",
-                "description":"Converted to Serverless Architecture. Started using AngularJS 1.x as JavaScript framework at browser."
+                "date": "2017-02-08",
+                "description": "Converted to Serverless Architecture. Started using AngularJS 1.x as JavaScript framework at browser."
             }
         ]
     },
     {
-        "version":"v5",
-        "changes":[
+        "version": "V5",
+        "changes": [
             {
-                "date":"2016-05-09",
-                "description":"Started using FontAwesome library for icons."
+                "date": "2016-05-09",
+                "description": "Started using FontAwesome library for icons."
             },
             {
-                "date":"2016-05-05",
-                "description":"Made the site responsive without bootstrap."
-            }
-            ,
+                "date": "2016-05-05",
+                "description": "Made the site responsive without bootstrap."
+            },
             {
-                "date":"2015-10-29",
-                "description":"Moved source to Github and setup continuous integration and delivery. Used AppVeyor for CI and CD"
+                "date": "2015-10-29",
+                "description": "Moved source to Github and setup continuous integration and delivery. Used AppVeyor for CI and CD"
+            }
+        ]
+    },
+    {
+        "version": "V4",
+        "changes": [
+            {
+                "date": "2015-09-08",
+                "description": "Added page for personal projects. Includes open source as well."
+            },
+            {
+                "date": "2015-05-11",
+                "description": "Added stackoverflow and linked in profiles into Resume."
+            },
+            {
+                "date": "2015-03-22",
+                "description": "Added error page and change log. Collected history from old mails for changelog."
+            },
+            {
+                "date": "2015-03-21",
+                "description": "Moved source to visualstudio.com. Enabled web deploy to speed up updates."
+            },
+            {
+                "date": "2015-03-19",
+                "description": "Moved entire site content from old hosting space to new. 2 days down time."
+            }
+        ]
+    },
+    {
+        "version": "V3",
+        "changes": [
+            {
+                "date": "2015-03-17",
+                "description": "Hosting space expired.."
+            },
+            {
+                "date": "2015-03-15",
+                "description": "Renewal of hosting space is very costly with godaddy. So bought new space from godaddy in introductory offer."
+            },
+            {
+                "date": "2014-04-28",
+                "description": "Renewed joymonline.in domain."
+            },
+            {
+                "date": "2013-03-26",
+                "description": "Renewed joymonline.in domain."
+            },
+            {
+                "date": "2012-03-17",
+                "description": "Bought domain (1 year) and hosting space(3 years) from godaddy. Started new domain www.joymononline.in"
+            }
+        ]
+    },
+    {
+        "version": "V2",
+        "changes": [
+            {
+                "date": "2011-07-30",
+                "description": "After many mails with UniTecHost support they gave me joymononline.co.in domain"
+            }
+        ]
+    },
+    {
+        "version": "V1",
+        "changes": [
+            {
+                "date": "2011-07-19",
+                "description": "Domain joymononline.com expired."
+            },
+            {
+                "date": "2011-06-17",
+                "description": "An e-mail came asking me to manually renew my domain else it will expire by 19Jun2011. Earlier this type of action was not at all required. Didn't give much attention as I had done already and due to intense work schedule."
+            },{
+                "date": "2011-06-12",
+                "description": "Renewed web site as usual"
+            },{
+                "date": "2010-06-13",
+                "description": "Renewed web site. By this time hosting provider stopped shared hosting. but continued existing."
+            },{
+                "date": "2009-05-25",
+                "description": "Renewed web site"
+            },{
+                "date": "2008-11-18",
+                "description": "NetWayWeb.Net was taken over / changed to Unitechost.in."
+            },{
+                "date": "2008-06-25",
+                "description": "    Started my personal website http://joymononline.com. Used Asp.Net 2.0 with free personal web site theme from Microsoft. Hosted with an Indian company called NetWayWeb.net"
             }
         ]
     }
