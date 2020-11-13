@@ -3,9 +3,12 @@
 <div class="page">
   <div id="content">
     {{ partial "page-header.html" . }}
+    {{range .Site.Data.blogs.hostnames}}
+    {{partial "blogview.html" .}}
+    {{end}}
+
     {{ $dataJ := getJSON "https://joyfulwpf.blogspot.com/feeds/posts/default?orderby=published&max-results=3&alt=json" }}
 
-    <div>
       <!-- When using the $t which is the JSON key name hugo says bad character U+0024 '$' -->
       <h4>
         <a href="{{(index $dataJ.feed.link 2).href}}"> {{ index $dataJ.feed.title "$t" }}</a></h4>
@@ -24,15 +27,13 @@
             </tr>
             <tr>
               <td colspan="2">
-                {{ slicestr (index .content "$t") 0 200 | safeHTML }}...
+                {{ slicestr (index .content "$t") 0 200 | plainify }}...
                 <!--{{ truncate 200 (index .content "$t") }}-->
               </td>
             </tr>
           </table>
         </div>
         {{ end }}
-        <hr />
-      </div>
     </div>
   </div>
 </div>

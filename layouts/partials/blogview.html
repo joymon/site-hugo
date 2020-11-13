@@ -1,0 +1,30 @@
+{{$url :=(print "https://" . "/feeds/posts/default?orderby=published&max-results=3&alt=json")}}
+
+{{ $dataJ := getJSON $url }}
+
+  <!-- When using the $t which is the JSON key name hugo says bad character U+0024 '$' -->
+  <h4>
+    <a href="{{(index $dataJ.feed.link 2).href}}"> {{ index $dataJ.feed.title "$t" }}</a></h4>
+  <div class="blogItems">
+    {{ range first 3 $dataJ.feed.entry }}
+    <div class="blogItem">
+      <table>
+        <tr>
+          <td><a href="{{(index .link 4).href}}"> {{index .title "$t" }}</a>
+          </td>
+          {{ $updated := index .updated "$t"}}
+          {{ $updated := ((time $updated).Add (1 | duration "hour" ))}}
+          <td class="postedDate">
+            {{ $updated.Format "02 Jan 2006"  }}
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            {{ slicestr (index .content "$t") 0 200 | plainify }}...
+            <!--{{ truncate 200 (index .content "$t") }}-->
+          </td>
+        </tr>
+      </table>
+    </div>
+    {{ end }}
+  </div>
