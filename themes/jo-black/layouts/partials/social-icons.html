@@ -1,12 +1,13 @@
 <div class="nav">
     {{ with .Site.Params.social }}
-        {{ range sort . "weight" }}
-        
-            {{if .url}}
-                {{if .icon}}
-                    <a href="{{.url | safeURL}}"><i class="{{.icon}}"></i></a>            
-            {{end}}
-        {{end}}
-        {{end}}
+    {{ range sort . "weight" }}
+
+    {{if .url}}
+    {{if .icon}}
+    <a href="{{.url | safeURL}}" aria-label="{{.name}}">
+        <i class="{{.icon}}"></i></a>
+    {{end}}
+    {{end}}
+    {{end}}
     {{end}}
 </div>
