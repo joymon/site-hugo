@@ -13,7 +13,7 @@
         {{dateFormat "02Jan2006" .date}}
       </dt>
       <dd>
-        {{.description}}
+        {{ (replace .description "\n" "<br/>") | safeHTML}}
       </dd>
     </dl>
     {{end}}
