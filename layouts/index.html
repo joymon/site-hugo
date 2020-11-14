@@ -22,11 +22,11 @@
         <hr/>
       <div id="whatsnew">
         <h3>What's new</h3>
-        <ul>
+        <p>
           {{ range first 3 $.Site.Data.whatsnew}}
-          <li>{{ . }}</li>
+          {{ . }}<br/>
           {{ end }}
-        </ul>
+        </p>
         <hr/>
       </div>
       <div class="homepage-content">
