@@ -17,3 +17,33 @@ copyright ="Copyright © 2020 Joy George K."
   pre="<i class='fa fa-home'></i>"
   url="/"
   weight="1"
+[[params.social]]
+  name = "Facebook"
+  icon = "fa fa-facebook"
+  weight = 2
+  url = "https://facebook.com/joygeorgek"
+[[params.social]]
+  name = "Twitter"
+  icon = "fa fa-twitter"
+  weight = 1
+  url = "https://twitter.com/joymon"
+[[params.social]]
+  name = "Google+"
+  icon = "fa fa-google-plus"
+  weight = 3
+  url = "https://plus.google.com/+JoyGeorgek"
+[[params.social]]
+  name = "LinkedIn"
+  icon = "fa fa-linkedin"
+  weight = 4
+  url = "https://www.linkedin.com/in/joymon"
+[[params.social]]
+  name = "GitHub"
+  icon = "fa fa-github"
+  weight = 5
+  url = "https://www.github.com/joymon"
+[[params.social]]
+  name = "YouTube"
+  icon = "fa fa-youtube"
+  weight = 6
+  url = "http://www.youtube.com/user/joygeorgek"
