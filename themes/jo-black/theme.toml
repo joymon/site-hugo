@@ -4,18 +4,18 @@
 name = "Jo Black"
 license = "MIT"
 licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
-description = ""
-homepage = "http://example.com/"
-tags = []
-features = []
+description = "A simple black theme for personal web sites"
+homepage = "https://joymononline.in/"
+tags = ["personal","black","portfolio"]
+features = ["Menu in header and footer","Social Media Icons","Mobile Friendly"]
 min_version = "0.41.0"
 
 [author]
-  name = ""
-  homepage = ""
+  name = "Joy George Kunjikkuru"
+  homepage = "https://joymononline.in"
 
 # If porting an existing theme
 [original]
-  name = ""
-  homepage = ""
+  name = "Personal Web Site Theme"
+  homepage = "Microsoft"
   repo = ""
