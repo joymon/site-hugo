@@ -1,14 +1,19 @@
 <title>{{.Site.Title}}</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
-<meta name="description"
-    content="{{ if .Params.summary }}{{ .Params.summary }}{{ else if .Site.Params.Description }}{{ .Site.Params.Description }}{{ else }}Something hardcoded{{ end }}" />
+<meta name="description" content="{{ if .Params.summary }}{{ .Params.summary }}{{ else if .Site.Params.Description }}{{ .Site.Params.Description }}{{ else }}Something hardcoded{{ end }}" />
 <meta name="KEYWORDS" content="{{ .Site.Params.Keywords }}">
 <meta property="author" content="{{if .Params.author}}{{.Params.author}}{{else}}{{ .Site.Params.author }}{{end}}" />
 <meta property="contact" content="{{if .Params.contact}}{{.Params.contact}}{{else}}{{ .Site.Params.contact }}{{end}}" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 
-<link rel="stylesheet" href="{{.Site.BaseURL}}/css/font-awesome.min.css" />
-<link rel="stylesheet" href="{{.Site.BaseURL}}/css/default.css" />
-<link rel="stylesheet" href="{{.Site.BaseURL}}/css/default-480px.css" />
-<link rel="stylesheet" href="{{.Site.BaseURL}}/css/default-700px.css" />
-<link rel="stylesheet" href="{{.Site.BaseURL}}/css/default-980px.css" />
+<link rel="stylesheet" href="{{.Site.BaseURL}}css/font-awesome.min.css" />
+
+{{ $cssResources := slice }}
+{{ $dir := readDir "themes/jo-black/assets/css" }}
+{{ range $dir }}
+  {{ $path := print "css/" .Name }}
+  {{ $resource := resources.Get $path }}
+  {{ $cssResources = $cssResources | append $resource }}
+{{ end }}
+{{ $cssBundle := $cssResources | resources.Concat "css/bundle.css" | fingerprint | minify }}
+<link rel="stylesheet" href="{{ $cssBundle.RelPermalink }}">

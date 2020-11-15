@@ -1,10 +1,9 @@
 /* 0 BASIC TAGS */
 
-table {
-    font-size: 1em;
-}
-
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     margin: 0;
     font-family: Arial, Tahoma, Helvetica, sans-serif;
 }
@@ -25,18 +24,18 @@ a {
     color: #DBB94F;
 }
 
-    a:visited {
-        color: #C19B28;
-    }
+a:visited {
+    color: #C19B28;
+}
 
-    a:hover {
-        text-decoration: underline;
-        color: #E6CD84;
-    }
+a:hover {
+    text-decoration: underline;
+    color: #E6CD84;
+}
 
-    a:active {
-        color: #C19B28;
-    }
+a:active {
+    color: #C19B28;
+}
 
 body {
     background-color: #656565;
@@ -54,6 +53,11 @@ img {
     border-width: 0;
 }
 
+table {
+    font-size: 1em;
+}
+
+
 /* 1 HEADER */
 
 .header {
@@ -65,7 +69,6 @@ img {
     margin: 0 auto 5px auto;
 }
 
-
 h1 {
     position: absolute;
     left: 37px;
@@ -75,85 +78,9 @@ h1 {
 }
 
 h2 {
-    position: absolute;
-    left: 37px;
-    top: 45px;
-    font-size: 11px;
-}
-
-.table {
-    display: table;
-}
-
-.row {
-    display: table-row;
-}
-
-.cell {
-    display: table-cell;
-}
-.logo {
-    position: absolute;
-    left: 37px;
-    top: 45px;
-    font-size: 11px;
-    letter-spacing: 3px;
-    margin-bottom: 5px;
-}
-
-.menua {
-    position: absolute;
-    right: 5px;
-    top: 13px;
-    
-}
-
-.menub {
-    margin: 8px auto 2px auto;
-    
-    float:left;
-    position:relative;
-}
-
-    .menub a:visited {
-        color: #DBB94F;
-    }
-
-.nav {
-    position: absolute;
-    right: 15px;
-    top: 51px;
-    text-transform: uppercase;
-    font-size: 1em;
-}
-
-    .nav i {
-        font-size: 1.4em;
-        margin-left: 1em;
-    }
-
-    .menua a:visited, .nav a:visited {
-        color: #DBB94F;
-    }
-
-/* 1.1 SHIM */
-
-.shim {
-    display: none;
-}
-
-/* 2 PAGE */
-
-.page {
-    background-repeat: repeat-y;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    position: relative;
-    width: 686px;
-    padding: 0px 37px;
-    padding-top: 1px; /* Weird Mozilla Bug */
-    padding-bottom: 40px; /* Weird Mozilla Bug */
+    margin-top: 1.0em;
+    margin-bottom: 1.12em;
+    font-size: 1.5em;
 }
 
 h3 {
@@ -169,25 +96,95 @@ h4 {
     font-size: 13px;
 }
 
-/* 2.1 ALL PAGES */
+.logo {
+    position: absolute;
+    left: 37px;
+    top: 45px;
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+}
 
+
+/* 1.1 Menu and social icons */
+
+.nav {
+    position: absolute;
+    right: 15px;
+    top: 51px;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+.nav i {
+    font-size: 1.4em;
+    margin-left: 1em;
+}
+
+.menua {
+    position: absolute;
+    right: 5px;
+    top: 13px;
+}
+
+.menub {
+    margin: 8px auto 2px auto;
+    float: left;
+    position: relative;
+}
+
+.menub a:visited,
+.menua a:visited,
+.nav a:visited {
+    color: #DBB94F;
+}
+
+.table {
+    display: table;
+}
+
+.row {
+    display: table-row;
+}
+
+.cell {
+    display: table-cell;
+}
+
+
+/* 1.2 SHIM */
+
+.shim {
+    display: none;
+}
+
+
+/* 2 PAGE */
+
+.page {
+    background-repeat: repeat-y;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    position: relative;
+    width: 686px;
+    padding: 0px 37px;
+    padding-top: 1px;
+    /* Weird Mozilla Bug */
+    padding-bottom: 40px;
+    /* Weird Mozilla Bug */
+}
+/* 2.1 ALL PAGES */
 
 #sidebar {
     float: left;
     width: 214px;
     height: 100%;
 }
-
 #content {
     margin-left: 256px;
 }
-
-#whatsnew {
-    /* width: 250px; */
-    height: 100%;
-}
-
-.page h4, #changeLog h4, #links h4 {
+.page h4 {
     margin-top: 0px;
     border-top: 1px solid #505050;
     padding-top: 1.0em;
@@ -195,7 +192,6 @@ h4 {
     left: 37px;
     width: 214px;
 }
-
 #resume #photo {
     position: absolute;
     left: 37px;
@@ -234,11 +230,6 @@ dd {
     margin-bottom: 10px;
 }
 
-.emptydata td {
-    padding: 50px;
-    color: #aeaeae;
-}
-
 .view {
     margin-left: auto;
     margin-right: auto;
@@ -246,27 +237,22 @@ dd {
     text-align: center;
 }
 
-    .view .photo-frame {
-        margin-left: auto;
-        margin-right: auto;
-    }
+.view .photo-frame {
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .item {
     padding: 20px 50px;
     color: #B2B2B2;
 }
 
-    .item h4 {
-        margin-bottom: 0.4em;
-    }
-
-.nullpanel {
-    padding: 150px;
-    width: auto;
-    text-align: center;
+.item h4 {
+    margin-bottom: 0.4em;
 }
 
-.buttonbar, .buttonbar-top {
+.buttonbar,
+.buttonbar-top {
     width: 686px;
     height: 36px;
     background-repeat: no-repeat;
@@ -274,26 +260,6 @@ dd {
     text-align: center;
 }
 
-/* 3 FOOTER */
-
-.footerbg {
-    width: auto;
-    height: 50px;
-    text-align: center;
-}
-
-.footer {
-    background-image: url(images/footer.gif);
-    background-repeat: no-repeat;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 20px;
-    width: 770px;
-    height: 100%;
-    text-align: center;
-    font-size: 10px;
-    color: #ffffff;
-}
 
 /* Inline styles are used because image controls hard code a border property */
 
@@ -334,12 +300,36 @@ dd {
     text-transform: uppercase;
     font-size: 10px;
 }
+
 .blogItem .postedDate {
-    width:25%;
-    text-align:right;
-    vertical-align:top;
+    width: 25%;
+    text-align: right;
+    vertical-align: top;
 }
-.copyright{
+
+
+/* 3 FOOTER */
+
+.footerbg {
+    width: auto;
+    height: 50px;
+    text-align: center;
+}
+
+.footer {
+    background-image: url(images/footer.gif);
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    width: 770px;
+    height: 100%;
+    text-align: center;
+    font-size: 10px;
+    color: #ffffff;
+}
+
+.copyright {
     position: relative;
     float: left;
     margin: 8px auto 2px auto;
