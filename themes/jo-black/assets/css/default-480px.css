@@ -1,12 +1,11 @@
 /* For 480px */
 @media screen and (max-width:480px) {
-    #coollinks {
-        display: none;
+    /* 0 BASIC TAGS */
+    h1 {
+        position: static;
+        left: 0px;
     }
-
-    #whatsnew {
-        width: auto;
-    }
+    /* 1 HEADER */
 
     .header {
         background-image: url(images/footer.gif) !important;
@@ -19,15 +18,6 @@
         padding-bottom: 10px;
         overflow:hidden;
     }
-
-    h1 {
-        position: static;
-        left: 0px;
-        top: 12px;
-        text-transform: uppercase;
-        font-size: 18px;
-    }
-
     .logo {
         position: static;
         left: 0px;
@@ -38,10 +28,25 @@
         right: auto;
         float: left;
     }
-
     .nav {
         display: none;
     }
+    .menua i {
+        display: block;
+        margin-left: .7em;
+        margin-right: .7em;
+        color: #CCCCCC;
+    }
+
+    #coollinks {
+        display: none;
+    }
+
+    #whatsnew {
+        width: auto;
+    }
+    
+    /* 2.1 ALL PAGES */
 
     .page h4,  #changeLog h4{
         position: static;
@@ -50,20 +55,8 @@
     #resume #photo {
         position: static;
     }
-
-    .menua i {
-        font-size: 2em;
-        display: block;
-        margin-left: .7em;
-        margin-right: .7em;
-        color: #CCCCCC;
-    }
-
     dd {
         margin-bottom: 10px;
     }
-    .copyright{
-        width: 100%;
-        padding-left: 0;
-    }
+    /* 3 FOOTER */
 }

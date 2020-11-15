@@ -1,10 +1,7 @@
 /* For 700px - tablets */
 @media screen and (max-width:700px) {
     .header {
-        position: relative;
         width: auto;
-        height: 76px;
-        margin: 0 auto 5px auto;
     }
 
     .page {
@@ -22,24 +19,11 @@
         float: none
     }
 
-    .footer {
-        background-image: url(images/footer.gif);
-        background-repeat: no-repeat;
-        margin-left: auto;
-        margin-right: auto;
-        padding-bottom: 20px;
-        width: auto;
-        height: 50px;
-        text-align: center;
-        font-size: 10px;
-        color: #ffffff;
-    }
-
     #coollinks {
         display: none;
     }
 
-    .page h4, #links h4, #changeLog h4 {
+    .page h4 {
         position: static;
     }
 
@@ -60,5 +44,11 @@
     .copyright{
         width: 100%;
         padding-left: 0;
+    }
+     /* 3 FOOTER */
+     
+    .footer {
+        width: auto;
+        height: 50px;
     }
 }
