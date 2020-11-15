@@ -5,7 +5,9 @@
         position: static;
         left: 0px;
     }
-    
+    body{
+        font-size: 1em;
+    }    
     /* 1 HEADER */
 
     .header {
@@ -23,7 +25,6 @@
         position: static;
         left: 0px;
     }
-
     .menua {
         position: static;
         right: auto;
@@ -32,17 +33,18 @@
     .nav {
         display: none;
     }
+    .menuItem{
+        font-size: 12px;
+    }
     .menua i {
         display: block;
-        margin-left: .7em;
-        margin-right: .7em;
+        margin-left: .5em;
+        margin-right: .5em;
         color: #CCCCCC;
     }
-
     #coollinks {
         display: none;
     }
-
     #whatsnew {
         width: auto;
     }
@@ -52,12 +54,14 @@
     .page h4,  #changeLog h4{
         position: static;
     }
-
     #resume #photo {
         position: static;
     }
     dd {
-        margin-bottom: 10px;
+        margin-left: 120px;
     }
     /* 3 FOOTER */
+    .footer{
+        background-size: cover;
+    }
 }
