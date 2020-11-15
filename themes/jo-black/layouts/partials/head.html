@@ -6,7 +6,7 @@
 <meta property="contact" content="{{if .Params.contact}}{{.Params.contact}}{{else}}{{ .Site.Params.contact }}{{end}}" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 
-<link rel="stylesheet" href="{{.Site.BaseURL}}css/font-awesome.min.css" />
+<link rel="stylesheet" href="{{path.Join "css/font-awesome.min.css" }}" />
 
 {{ $cssResources := slice }}
 {{ $dir := readDir "themes/jo-black/assets/css" }}
