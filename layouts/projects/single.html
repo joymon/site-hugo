@@ -12,10 +12,12 @@
       <p class="first">
         {{ $response.description}}<br />
         <br />
+      </p>
+      <p class="second">
         Application URL: <a href="{{$response.homepage}}">
           {{$response.homepage}}</a>
         <br />
-        Source code:<a href="{{$response.url}}">{{$response.url}}</a>
+        Source code: <a href="{{$response.url}}">{{$response.url}}</a>
       </p>
     </div>
     {{ end }}
