@@ -57,8 +57,11 @@
     #resume #photo {
         position: static;
     }
+    dt{
+        max-width: 140px;
+    }
     dd {
-        margin-left: 120px;
+        margin-left: 150px;
     }
     /* 3 FOOTER */
     .footer{
