@@ -43,6 +43,7 @@
     }
     .page .second{
         text-align: left;
+        overflow-wrap: break-word;
     }
     .copyright{
         width: 100%;
