@@ -51,8 +51,9 @@
     
     /* 2.1 ALL PAGES */
 
-    .page h4,  #changeLog h4{
+    .page h4, h4{
         position: static;
+        font-size: initial;
     }
     #resume #photo {
         position: static;
