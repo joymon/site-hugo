@@ -12,8 +12,8 @@ menu:
     weight: 2
 ---
 
+{{<stackoverflow-badge userid="181832">}}
 
 [Download](https://joymononline.in/uploads/joy_resume.pdf)
 
-        
 {{< gdocs src="https://docs.google.com/gview?url=https://joymononline.in/uploads/joy_resume.pdf&embedded=true" title="Resume of Joy George Kunjikkuru" >}}
