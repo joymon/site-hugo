@@ -1,1 +1,48 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url><loc>https://joymon.github.io/site-hugo/vlogs/</loc><lastmod>2020-07-12T08:57:02-04:00</lastmod></url><url><loc>https://joymon.github.io/site-hugo/changelog/</loc><lastmod>2020-07-11T22:20:46-04:00</lastmod></url><url><loc>https://joymon.github.io/site-hugo/projects/</loc><lastmod>2020-07-11T22:20:40-04:00</lastmod></url><url><loc>https://joymon.github.io/site-hugo/resume/</loc><lastmod>2020-07-11T22:08:50-04:00</lastmod></url><url><loc>https://joymon.github.io/site-hugo/blogs/</loc><lastmod>2020-07-11T21:57:50-04:00</lastmod></url><url><loc>https://joymon.github.io/site-hugo/links/</loc><lastmod>2020-07-11T21:55:32-04:00</lastmod></url><url><loc>https://joymon.github.io/site-hugo/</loc><lastmod>2020-07-11T21:55:32-04:00</lastmod></url><url><loc>https://joymon.github.io/site-hugo/home/</loc><priority>0</priority></url><url><loc>https://joymon.github.io/site-hugo/categories/</loc></url><url><loc>https://joymon.github.io/site-hugo/tags/</loc></url></urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://joymon.github.io/site-hugo/vlogs/</loc>
+    <lastmod>2020-07-12T08:57:02-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joymon.github.io/site-hugo/changelog/</loc>
+    <lastmod>2020-07-11T22:20:46-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joymon.github.io/site-hugo/projects/</loc>
+    <lastmod>2020-07-11T22:20:40-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joymon.github.io/site-hugo/resume/</loc>
+    <lastmod>2020-07-11T22:08:50-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joymon.github.io/site-hugo/blogs/</loc>
+    <lastmod>2020-07-11T21:57:50-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joymon.github.io/site-hugo/links/</loc>
+    <lastmod>2020-07-11T21:55:32-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joymon.github.io/site-hugo/</loc>
+    <lastmod>2020-07-11T21:55:32-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joymon.github.io/site-hugo/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://joymon.github.io/site-hugo/tags/</loc>
+  </url>
+  
+</urlset>

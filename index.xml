@@ -1,1 +1,67 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Welcome to JoymonOnline on JoymonOnline</title><link>https://joymon.github.io/site-hugo/</link><description>Recent content in Welcome to JoymonOnline on JoymonOnline</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Copyright © 2020 Joy George K.</copyright><lastBuildDate>Sat, 11 Jul 2020 21:55:32 -0400</lastBuildDate><atom:link href="https://joymon.github.io/site-hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>Vlogs</title><link>https://joymon.github.io/site-hugo/vlogs/</link><pubDate>Sun, 12 Jul 2020 08:57:02 -0400</pubDate><guid>https://joymon.github.io/site-hugo/vlogs/</guid><description>Vlogs</description></item><item><title>Changelog</title><link>https://joymon.github.io/site-hugo/changelog/</link><pubDate>Sat, 11 Jul 2020 22:20:46 -0400</pubDate><guid>https://joymon.github.io/site-hugo/changelog/</guid><description>Changelog</description></item><item><title>Applications</title><link>https://joymon.github.io/site-hugo/projects/</link><pubDate>Sat, 11 Jul 2020 22:20:40 -0400</pubDate><guid>https://joymon.github.io/site-hugo/projects/</guid><description/></item><item><title>Joy George K</title><link>https://joymon.github.io/site-hugo/resume/</link><pubDate>Sat, 11 Jul 2020 22:08:50 -0400</pubDate><guid>https://joymon.github.io/site-hugo/resume/</guid><description> Download</description></item><item><title>Blogs</title><link>https://joymon.github.io/site-hugo/blogs/</link><pubDate>Sat, 11 Jul 2020 21:57:50 -0400</pubDate><guid>https://joymon.github.io/site-hugo/blogs/</guid><description/></item><item><title>About the Links</title><link>https://joymon.github.io/site-hugo/links/</link><pubDate>Sat, 11 Jul 2020 21:55:32 -0400</pubDate><guid>https://joymon.github.io/site-hugo/links/</guid><description>My blogs Joymon&amp;rsquo;s World of WPF A blog about the new Microsoft technology WPF.</description></item><item><title/><link>https://joymon.github.io/site-hugo/home/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://joymon.github.io/site-hugo/home/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Welcome to JoymonOnline on JoymonOnline</title>
+    <link>https://joymon.github.io/site-hugo/</link>
+    <description>Recent content in Welcome to JoymonOnline on JoymonOnline</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2020 Joy George K.</copyright>
+    <lastBuildDate>Sat, 11 Jul 2020 21:55:32 -0400</lastBuildDate><atom:link href="https://joymon.github.io/site-hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vlogs</title>
+      <link>https://joymon.github.io/site-hugo/vlogs/</link>
+      <pubDate>Sun, 12 Jul 2020 08:57:02 -0400</pubDate>
+      
+      <guid>https://joymon.github.io/site-hugo/vlogs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Changelog</title>
+      <link>https://joymon.github.io/site-hugo/changelog/</link>
+      <pubDate>Sat, 11 Jul 2020 22:20:46 -0400</pubDate>
+      
+      <guid>https://joymon.github.io/site-hugo/changelog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Applications</title>
+      <link>https://joymon.github.io/site-hugo/projects/</link>
+      <pubDate>Sat, 11 Jul 2020 22:20:40 -0400</pubDate>
+      
+      <guid>https://joymon.github.io/site-hugo/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Joy George K</title>
+      <link>https://joymon.github.io/site-hugo/resume/</link>
+      <pubDate>Sat, 11 Jul 2020 22:08:50 -0400</pubDate>
+      
+      <guid>https://joymon.github.io/site-hugo/resume/</guid>
+      <description> Download
+  </description>
+    </item>
+    
+    <item>
+      <title>Blogs</title>
+      <link>https://joymon.github.io/site-hugo/blogs/</link>
+      <pubDate>Sat, 11 Jul 2020 21:57:50 -0400</pubDate>
+      
+      <guid>https://joymon.github.io/site-hugo/blogs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>About the Links</title>
+      <link>https://joymon.github.io/site-hugo/links/</link>
+      <pubDate>Sat, 11 Jul 2020 21:55:32 -0400</pubDate>
+      
+      <guid>https://joymon.github.io/site-hugo/links/</guid>
+      <description>My blogs Joymon&amp;rsquo;s World of WPF A blog about the new Microsoft technology WPF.</description>
+    </item>
+    
+  </channel>
+</rss>
