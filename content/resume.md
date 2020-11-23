@@ -3,7 +3,6 @@ title: "Joy George K"
 date: 2020-07-11T22:08:50-04:00
 draft: false
 description: "Resume updated 5 Dec 2015"
-
 menu:
   main:
     identifier: Resume

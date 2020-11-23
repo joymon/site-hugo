@@ -11,6 +11,3 @@ menu:
     pre: "<i class='fa fa-list-alt'></i>"
     weight: 7
 ---
-
-# Changelog
-

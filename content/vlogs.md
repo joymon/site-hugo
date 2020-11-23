@@ -11,5 +11,3 @@ menu:
     pre: "<i class='fa fa-youtube'></i>"
     weight: 4
 ---
-
-# Vlogs
