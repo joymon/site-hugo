@@ -28,7 +28,7 @@ jobs:
           hugo-version: '0.74.2'
           # extended: true
       - name: Build peaceiris
-        run: hugo --minify
+        run: hugo --minify --environment _default
       - name: Deploy peaceiris
         uses: peaceiris/actions-gh-pages@v3
         with:
