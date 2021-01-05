@@ -3,6 +3,10 @@
         "version": "V7",
         "changes": [
             {
+                "date":"2021-01-04",
+                "description":"JAMstack based <a href='https://JoymonOnline.in'>https://JoymonOnline.in</a> is live. Powered by Hugo"
+            },
+            {
                 "date": "2020-11-08",
                 "description": "Migrated from AngularJS 1.x to JAMstack using Hugo. Used same theme. Staging version ready."
             }
