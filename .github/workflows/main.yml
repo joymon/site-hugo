@@ -17,11 +17,11 @@ jobs:
         uses: actions/checkout@master
         with:
           submodules: true
-      - name: Publish Site chabad360
-        uses: chabad360/hugo-gh-pages@master
-        with:
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
-          args: --cleanDestinationDir
+      #- name: Publish Site chabad360
+      #  uses: chabad360/hugo-gh-pages@master
+      #  with:
+      #    githubToken: ${{ secrets.GITHUB_TOKEN }}
+      #    args: --cleanDestinationDir
       - name: Setup Hugo peaceiris
         uses: peaceiris/actions-hugo@v2
         with:
