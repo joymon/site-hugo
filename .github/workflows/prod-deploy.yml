@@ -31,3 +31,4 @@ jobs:
           publish_dir: ./public
           external_repository: JoymonOnline/joymononline.github.io
           publish_branch : gh-pages
+          cname: joymononline.in
