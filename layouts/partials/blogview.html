@@ -20,7 +20,13 @@
         </tr>
         <tr>
           <td colspan="2">
-            {{ slicestr (index .content "$t") 0 200 | plainify }}...
+            {{$content := index .content "$t"}}
+            <!--If the size of blog post is > 200 trim it. Else show as is without HTML tags-->
+            {{if gt (len $content) 200}}
+            {{ slicestr $content 0 200 | plainify }}...
+            {{else}}
+            {{ $content | plainify }}
+            {{end}}
             <!--{{ truncate 200 (index .content "$t") }}-->
           </td>
         </tr>
