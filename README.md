@@ -1,5 +1,5 @@
 ![Publish Dev Site](https://github.com/JoymonOnline/site-hugo/workflows/Publish%20Dev%20Site/badge.svg)
-
+[![Deploy Prod](https://github.com/joymon/site-hugo/actions/workflows/prod-deploy.yml/badge.svg)](https://github.com/joymon/site-hugo/actions/workflows/prod-deploy.yml)
 # https://JoymonOnline.in (Hugo)
 Source of Hugo based(in-progress) JoymonOnline.in
 
