@@ -1,6 +1,11 @@
-![Publish Dev Site](https://github.com/JoymonOnline/site-hugo/workflows/Publish%20Dev%20Site/badge.svg)
-[![Deploy Prod](https://github.com/joymon/site-hugo/actions/workflows/prod-deploy.yml/badge.svg)](https://github.com/joymon/site-hugo/actions/workflows/prod-deploy.yml)
-# https://JoymonOnline.in (Hugo)
+| Area          |      Badges  |
+|:----------    |:-------------|
+| Build         | ![Publish Dev Site](https://github.com/JoymonOnline/site-hugo/workflows/Publish%20Dev%20Site/badge.svg) |
+| Code | ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/joymon/site-hugo) ![GitHub repo size](https://img.shields.io/github/repo-size/joymon/site-hugo) [![](https://tokei.rs/b1/github/joymon/site-hugo)](https://github.com/joymon/site-hugo) |
+| Issues | [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/joymon/site-hugo.svg)](http://isitmaintained.com/project/joymon/site-hugo "Average time to resolve an issue") [![Percentage of issues still open](http://isitmaintained.com/badge/open/joymon/site-hugo.svg)](http://isitmaintained.com/project/site-hugo "Percentage of issues still open") |
+| Deployment    |  [![Deploy Prod](https://github.com/joymon/site-hugo/actions/workflows/prod-deploy.yml/badge.svg)](https://github.com/joymon/site-hugo/actions/workflows/prod-deploy.yml) |
+
+# https://JoymonOnline.in (Hugo) 
 Source of Hugo based JoymonOnline.in
 
 # Architecture
