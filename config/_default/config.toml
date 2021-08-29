@@ -3,13 +3,13 @@ languageCode = "en-us"
 title = "JoymonOnline"
 theme ="jo-black"
 show_reading_time = true
-copyright ="Copyright © 2021 Joy George K."
+copyright ="Copyright © 2021 Joy George Kunjikkuru."
 [params]
- description = "Personal information site of Joy George K nicknamed Joymon.This contains my personal ,educational and professionsl details"
+ description = "Personal information site of Joy George Kunjikkuru nicknamed Joymon.This contains my personal ,educational and professionsl details"
  subtitle = "Know me more..."
- author ="Joy George K"
+ author ="Joy George Kunjikkuru"
  contact = "joymon@gmail.com"
- keywords = "Joymon, Joymon Online, Joy George K, Kunjikkuru House"
+ keywords = "Joymon, Joymon Online, Joy George Kunjikkuru, Kunjikkuru House"
 [menu]
  [[menu.main]]
   identifier ="Home"
