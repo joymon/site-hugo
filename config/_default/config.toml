@@ -28,11 +28,6 @@ copyright ="Copyright © 2022 Joy George Kunjikkuru."
   weight = 1
   url = "https://twitter.com/joymon"
 [[params.social]]
-  name = "Google+"
-  icon = "fa fa-google-plus"
-  weight = 3
-  url = "https://plus.google.com/+JoyGeorgek"
-[[params.social]]
   name = "LinkedIn"
   icon = "fa fa-linkedin"
   weight = 4
